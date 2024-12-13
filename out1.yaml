@@ -1,1 +1,11 @@
-{}
+name: example.com
+port: 80
+logging:
+  level: info
+  path: /var/log/server.log
+security:
+  enable_https: true
+  cors_policy: allow_all
+features:
+  enable_cache: true
+  max_connections: 1000
