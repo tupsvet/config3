@@ -1,1 +1,12 @@
-{}
+name: Premium Account
+features:
+  interest_rate: 3.5
+  monthly_fee: 9.99
+  perks:
+    cashback: true
+    travel_insurance: true
+    support_priority: high
+restrictions:
+  min_balance: 1000
+  max_transactions: 50
+status: enabled
