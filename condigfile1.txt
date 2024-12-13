@@ -1,0 +1,22 @@
+# Конфигурация сервера
+var host q(localhost)
+var port 8080
+/* 
+Многострочный
+комментарий
+*/
+{
+    server_name = $[host],
+    server_port = $[port],
+    logging = {
+        level = q(info),
+        path = q(/var/log/server.log)
+    },
+    features = {
+        enable_https = 1,
+        enable_cache = 0,
+        max_connections = 1000
+    },
+    start = 1
+}
+admin_email = q(admin@example.com)
