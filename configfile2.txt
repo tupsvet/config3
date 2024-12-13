@@ -1,0 +1,27 @@
+# Конфигурация робота
+var id 1234
+var model q(T-800)
+/*
+Многострочный комментарий
+для описания задачи
+*/
+robot {
+    id = $[id],
+    model = $[model],
+    tasks = {
+        welding = {
+            power_level = 85,
+            duration = 120,
+            repeat = 3
+        },
+        painting = {
+            color = q(red),
+            layers = 2
+        }
+    },
+    safety = {
+        emergency_stop = 1,
+        max_temp = 75
+    },
+    status = q(active)
+}
