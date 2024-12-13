@@ -1,0 +1,23 @@
+# Конфигурация сервера
+var host q(localhost)
+var port 8080
+/* 
+Многострочный
+комментарий
+*/
+{
+    server_name = $[host],
+    server_port = $[port],
+    logging = {
+        level = q(info),
+        path = q(path)
+    },
+    features = {
+        enable_https = 1,
+        enable_cache = 0,
+        af = 2
+    },
+    start = 1
+}
+fa = q(ef)
+

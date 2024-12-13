@@ -1,0 +1,11 @@
+fa: ef
+features:
+  af: 2
+  enable_cache: 0
+  enable_https: 1
+logging:
+  level: info
+  path: path
+server_name: localhost
+server_port: 8080
+start: 1
