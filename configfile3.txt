@@ -1,0 +1,24 @@
+# Конфигурация банковского продукта
+var product_name q(Premium Account)
+var interest_rate 3.5
+/* 
+Описание параметров
+и ограничений продукта
+*/
+bank_product {
+    name = $[product_name],
+    features = {
+        interest_rate = $[interest_rate],
+        monthly_fee = 9.99,
+        perks = {
+            cashback = 1,
+            travel_insurance = 1,
+            support_priority = q(high)
+        }
+    },
+    restrictions = {
+        min_balance = 1000,
+        max_transactions = 50
+    },
+    status = q(enabled)
+}
