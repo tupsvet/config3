@@ -1,1 +1,14 @@
-{}
+id: 1234
+model: T-800
+tasks:
+  welding:
+    power_level: 85
+    duration: 120
+    repeat: 3
+  painting:
+    color: red
+    layers: 2
+safety:
+  emergency_stop: true
+  max_temp: 75
+status: active
